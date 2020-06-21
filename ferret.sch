@@ -1119,12 +1119,12 @@ Wire Wire Line
 Wire Wire Line
 	1850 1900 2050 1900
 Wire Wire Line
-	2750 2900 2550 2900
+	2750 2900 2500 2900
 Wire Wire Line
-	2550 2800 2750 2800
-Text Label 2550 2900 0    50   ~ 0
+	2250 2800 2450 2800
+Text Label 2250 2900 0    50   ~ 0
 CC2
-Text Label 2550 2800 0    50   ~ 0
+Text Label 2250 2800 0    50   ~ 0
 CC1
 $Comp
 L power:GND #PWR06
@@ -1142,23 +1142,14 @@ Wire Wire Line
 $Comp
 L power:GND #PWR03
 U 1 1 5F008D24
-P 2700 3550
-F 0 "#PWR03" H 2700 3300 50  0001 C CNN
-F 1 "GND" H 2705 3377 50  0000 C CNN
-F 2 "" H 2700 3550 50  0001 C CNN
-F 3 "" H 2700 3550 50  0001 C CNN
-	1    2700 3550
+P 2650 3600
+F 0 "#PWR03" H 2650 3350 50  0001 C CNN
+F 1 "GND" H 2655 3427 50  0000 C CNN
+F 2 "" H 2650 3600 50  0001 C CNN
+F 3 "" H 2650 3600 50  0001 C CNN
+	1    2650 3600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2700 3550 2700 3500
-Wire Wire Line
-	2700 3400 2750 3400
-Wire Wire Line
-	2750 3500 2700 3500
-Connection ~ 2700 3500
-Wire Wire Line
-	2700 3500 2700 3400
 $Comp
 L Device:C_Small C5
 U 1 1 5F01D14E
@@ -1235,15 +1226,11 @@ Wire Wire Line
 Text Label 4300 3200 2    50   ~ 0
 ~PROT_FLT
 Wire Wire Line
-	2750 3200 2700 3200
+	2750 3200 2650 3200
 Wire Wire Line
-	2700 3200 2700 3300
-Connection ~ 2700 3400
+	2650 3200 2650 3300
 Wire Wire Line
-	2750 3300 2700 3300
-Connection ~ 2700 3300
-Wire Wire Line
-	2700 3300 2700 3400
+	2750 3300 2650 3300
 $Comp
 L power:GND #PWR02
 U 1 1 5F1148DD
@@ -1594,7 +1581,6 @@ F 3 "" H 4450 7000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 3300 6050
-NoConn ~ 2600 6550
 NoConn ~ 2600 6450
 $Comp
 L power:+3V3 #PWR04
@@ -1785,4 +1771,27 @@ $EndComp
 Wire Wire Line
 	7650 5800 7650 5850
 Connection ~ 7650 5850
+Wire Wire Line
+	2750 3400 2450 3400
+Wire Wire Line
+	2450 3400 2450 2800
+Connection ~ 2450 2800
+Wire Wire Line
+	2450 2800 2750 2800
+Wire Wire Line
+	2500 2900 2500 3500
+Wire Wire Line
+	2500 3500 2750 3500
+Connection ~ 2500 2900
+Wire Wire Line
+	2500 2900 2250 2900
+Wire Wire Line
+	2650 3300 2650 3600
+Connection ~ 2650 3300
+Text Label 2150 6550 0    50   ~ 0
+EN_SNK
+Wire Wire Line
+	2150 6550 2600 6550
+Text Notes 1350 6400 0    50   ~ 0
+In a dead battery situation\nwhen EN_SNK goes high,\nACDRV1 should be enabled.
 $EndSCHEMATC
