@@ -1516,10 +1516,16 @@ Wire Wire Line
 	3150 3250 3150 3550
 Connection ~ 3150 3250
 $Sheet
-S 5100 6000 1250 1150
+S 5600 5200 700  800 
 U 5EF44CB5
 F0 "MCU" 50
 F1 "MCU.sch" 50
+F2 "~INT_PMC" I L 5600 5350 50 
+F3 "EN_SNK" I L 5600 5550 50 
+F4 "~CE" O L 5600 5650 50 
+F5 "SCL" O L 5600 5750 50 
+F6 "SDA" B L 5600 5850 50 
+F7 "~INT_CHG" I L 5600 5450 50 
 $EndSheet
 Text Notes 750  6200 0    50   ~ 0
 In a dead battery situation\nwhen EN_SNK goes high,\nACDRV1 should be enabled.
@@ -1800,4 +1806,28 @@ Text Label 3450 6350 0    50   ~ 0
 ~INT_PMC
 Text Label 3800 6750 2    50   ~ 0
 ~PROT_FLT
+Text Label 5200 5650 0    50   ~ 0
+~CE
+Text Label 5200 5850 0    50   ~ 0
+SDA
+Text Label 5200 5750 0    50   ~ 0
+SCL
+Text Label 5200 5450 0    50   ~ 0
+~INT_CHG
+Text Label 5200 5350 0    50   ~ 0
+~INT_PMC
+Text Label 5200 5550 0    50   ~ 0
+EN_SNK
+Wire Wire Line
+	5200 5350 5600 5350
+Wire Wire Line
+	5600 5450 5200 5450
+Wire Wire Line
+	5200 5550 5600 5550
+Wire Wire Line
+	5600 5650 5200 5650
+Wire Wire Line
+	5600 5750 5200 5750
+Wire Wire Line
+	5200 5850 5600 5850
 $EndSCHEMATC
