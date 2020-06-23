@@ -38,29 +38,29 @@ $EndComp
 $Comp
 L Connector:Jack-DC J2
 U 1 1 5EEE8F90
-P 3900 1750
-F 0 "J2" H 3957 2075 50  0000 C CNN
-F 1 "Jack-DC" H 3957 1984 50  0000 C CNN
-F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 3950 1710 50  0001 C CNN
-F 3 "~" H 3950 1710 50  0001 C CNN
-	1    3900 1750
+P 3850 1750
+F 0 "J2" H 3907 2075 50  0000 C CNN
+F 1 "Jack-DC" H 3907 1984 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 3900 1710 50  0001 C CNN
+F 3 "~" H 3900 1710 50  0001 C CNN
+	1    3850 1750
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR014
 U 1 1 5EEEAF6A
-P 4300 1950
-F 0 "#PWR014" H 4300 1700 50  0001 C CNN
-F 1 "GND" H 4305 1777 50  0000 C CNN
-F 2 "" H 4300 1950 50  0001 C CNN
-F 3 "" H 4300 1950 50  0001 C CNN
-	1    4300 1950
+P 5550 2550
+F 0 "#PWR014" H 5550 2300 50  0001 C CNN
+F 1 "GND" H 5555 2377 50  0000 C CNN
+F 2 "" H 5550 2550 50  0001 C CNN
+F 3 "" H 5550 2550 50  0001 C CNN
+	1    5550 2550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4300 1950 4300 1850
+	5550 2550 5550 2450
 Wire Wire Line
-	4300 1850 4200 1850
+	5550 2450 5200 2450
 NoConn ~ 1850 2600
 NoConn ~ 1850 2700
 NoConn ~ 1850 2900
@@ -94,7 +94,7 @@ Wire Wire Line
 Text Label 5300 1100 2    50   ~ 0
 ACDRV2
 Wire Wire Line
-	4200 1650 4350 1650
+	4150 1650 4300 1650
 Wire Wire Line
 	5700 1650 5850 1650
 $Comp
@@ -110,10 +110,10 @@ F 3 "" H 5850 1550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5850 1550 5850 1650
-Connection ~ 4350 1650
+Connection ~ 4300 1650
 Wire Wire Line
-	4350 1650 4450 1650
-Text Label 4350 1400 3    50   ~ 0
+	4300 1650 4400 1650
+Text Label 4300 1400 3    50   ~ 0
 VAC2
 Text Label 7950 1700 3    50   ~ 0
 VAC2
@@ -2062,16 +2062,16 @@ Wire Wire Line
 $Comp
 L Connector:TestPoint_Small TP3
 U 1 1 5F25CC29
-P 4350 1300
-F 0 "TP3" H 4350 1485 50  0000 C CNN
-F 1 "VBUS_DC" H 4350 1394 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 4550 1300 50  0001 C CNN
-F 3 "~" H 4550 1300 50  0001 C CNN
-	1    4350 1300
+P 4300 1300
+F 0 "TP3" H 4300 1485 50  0000 C CNN
+F 1 "VBUS_DC" H 4300 1394 50  0000 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 4500 1300 50  0001 C CNN
+F 3 "~" H 4500 1300 50  0001 C CNN
+	1    4300 1300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4350 1300 4350 1650
+	4300 1300 4300 1650
 $Comp
 L Connector:TestPoint_Small TP5
 U 1 1 5F280EAB
@@ -2185,4 +2185,86 @@ Wire Wire Line
 Connection ~ 9600 1550
 Text Notes 10300 1250 0    50   ~ 0
 Power from Battery\nor external PSU
+$Comp
+L Device:Q_NMOS_SGD Q?
+U 1 1 5EF486C4
+P 4900 2350
+F 0 "Q?" V 5149 2350 50  0000 C CNN
+F 1 "40V" V 5240 2350 50  0000 C CNN
+F 2 "" H 5100 2450 50  0001 C CNN
+F 3 "~" H 4900 2350 50  0001 C CNN
+F 4 "SiSS10ADN" V 4900 2350 50  0001 C CNN "MPN"
+	1    4900 2350
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	4150 1850 4300 1850
+Wire Wire Line
+	4300 1850 4300 2450
+Wire Wire Line
+	4300 2450 4700 2450
+Text Notes 3350 2100 0    50   ~ 0
+XT60 or spring-loaded\nsockets here?
+$Comp
+L Device:D_Zener_Small D?
+U 1 1 5EF931C4
+P 5550 2250
+F 0 "D?" V 5504 2320 50  0000 L CNN
+F 1 "12V" V 5595 2320 50  0000 L CNN
+F 2 "" V 5550 2250 50  0001 C CNN
+F 3 "~" V 5550 2250 50  0001 C CNN
+	1    5550 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5EF93EA3
+P 5200 2250
+F 0 "R?" H 5141 2204 50  0000 R CNN
+F 1 "1M" H 5141 2295 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5200 2250 50  0001 C CNN
+F 3 "~" H 5200 2250 50  0001 C CNN
+	1    5200 2250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5200 2350 5200 2450
+Connection ~ 5200 2450
+Wire Wire Line
+	5200 2450 5100 2450
+Wire Wire Line
+	5550 2350 5550 2450
+Connection ~ 5550 2450
+Wire Wire Line
+	5550 2150 5550 2100
+Wire Wire Line
+	5550 2100 5200 2100
+Wire Wire Line
+	4900 2100 4900 2150
+Wire Wire Line
+	5200 2150 5200 2100
+Connection ~ 5200 2100
+Wire Wire Line
+	5200 2100 4900 2100
+$Comp
+L Device:R_Small R?
+U 1 1 5F095217
+P 4650 2100
+F 0 "R?" H 4709 2146 50  0000 L CNN
+F 1 "100k" H 4709 2055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4650 2100 50  0001 C CNN
+F 3 "~" H 4650 2100 50  0001 C CNN
+	1    4650 2100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4750 2100 4900 2100
+Connection ~ 4900 2100
+Wire Wire Line
+	4550 2100 4400 2100
+Wire Wire Line
+	4400 2100 4400 1650
+Connection ~ 4400 1650
+Wire Wire Line
+	4400 1650 4450 1650
 $EndSCHEMATC
