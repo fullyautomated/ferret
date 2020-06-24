@@ -420,7 +420,7 @@ U 1 1 5EFF14C3
 P 1400 2100
 F 0 "J9" H 970 2039 50  0000 R CNN
 F 1 "CTRL" H 970 1948 50  0000 R CNN
-F 2 "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12" H 1550 2100 50  0001 C CNN
+F 2 "Connector_USB:USB_C_Receptacle_XKB_U262-16XN-4BVC11" H 1550 2100 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1550 2100 50  0001 C CNN
 	1    1400 2100
 	1    0    0    -1  
