@@ -164,25 +164,6 @@ X ~ 2 0 -100 80 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_Crystal_Small
-#
-DEF Device_Crystal_Small Y 0 40 N N 1 F N
-F0 "Y" 0 100 50 H V C CNN
-F1 "Device_Crystal_Small" 0 -100 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Crystal*
-$ENDFPLIST
-DRAW
-S -30 -60 30 60 0 1 0 N
-P 2 0 1 15 -50 -30 -50 30 N
-P 2 0 1 15 50 -30 50 30 N
-X 1 1 -100 0 50 R 50 50 1 1 P
-X 2 2 100 0 50 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Device_D_TVS
 #
 DEF Device_D_TVS D 0 40 N N 1 F N
@@ -299,19 +280,6 @@ DRAW
 S -30 70 30 -70 0 1 8 N
 X ~ 1 0 100 30 D 50 50 1 1 P
 X ~ 2 0 -100 30 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Graphic_SYM_Arrow45_Normal
-#
-DEF Graphic_SYM_Arrow45_Normal #SYM 0 40 Y Y 1 F N
-F0 "#SYM" 150 50 50 H I C CNN
-F1 "Graphic_SYM_Arrow45_Normal" 0 -100 50 H I C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 10 60 -60 -70 70 N
-P 4 0 1 0 70 -70 10 -40 40 -10 70 -70 F
 ENDDRAW
 ENDDEF
 #
