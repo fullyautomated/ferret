@@ -1020,14 +1020,14 @@ Wire Wire Line
 	7550 3600 7250 3600
 Text Label 10300 2000 0    50   ~ 0
 EXT_1
-Text Label 5600 4000 0    50   ~ 0
+Text Label 5600 4100 0    50   ~ 0
 EXT_3
 Text Label 7550 3000 2    50   ~ 0
 EXT_2
 Wire Wire Line
 	7550 3000 7250 3000
 Wire Wire Line
-	5950 4000 5600 4000
+	5950 4100 5600 4100
 Text Label 10300 2100 0    50   ~ 0
 EXT_2
 Text Label 10300 2200 0    50   ~ 0
@@ -1071,10 +1071,10 @@ Wire Wire Line
 	10150 1450 10150 1400
 Wire Wire Line
 	10150 1400 10550 1400
-Text Label 5600 4100 0    50   ~ 0
+Text Label 5600 4000 0    50   ~ 0
 EXT_4
 Wire Wire Line
-	5950 4100 5600 4100
+	5950 4000 5600 4000
 Text Label 10300 2300 0    50   ~ 0
 EXT_4
 Wire Wire Line

@@ -1,6 +1,6 @@
-update=Mon Jun 29 16:50:45 2020
+update=Mon Jun 29 19:21:17 2020
 version=1
-last_client=pcbnew
+last_client=kicad
 [general]
 version=1
 RootSch=
@@ -54,10 +54,10 @@ dPairGap1=0.25
 dPairViaGap1=0.25
 dPairWidth2=0.09
 dPairGap2=0.09
-dPairViaGap2=0.54
+dPairViaGap2=0.6
 dPairWidth3=0.127
 dPairGap3=0.127
-dPairViaGap3=0.54
+dPairViaGap3=0.8
 dPairWidth4=0.2
 dPairGap4=0.2
 dPairViaGap4=0.8
