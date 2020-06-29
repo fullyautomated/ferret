@@ -302,6 +302,19 @@ X ~ 2 0 -100 30 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Graphic_SYM_Arrow45_Normal
+#
+DEF Graphic_SYM_Arrow45_Normal #SYM 0 40 Y Y 1 F N
+F0 "#SYM" 150 50 50 H I C CNN
+F1 "Graphic_SYM_Arrow45_Normal" 0 -100 50 H I C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 10 60 -60 -70 70 N
+P 4 0 1 0 70 -70 10 -40 40 -10 70 -70 F
+ENDDRAW
+ENDDEF
+#
 # Interface_USB_FUSB302BMPX
 #
 DEF Interface_USB_FUSB302BMPX U 0 20 Y Y 1 F N
@@ -394,6 +407,21 @@ X PF1 6 -700 800 100 R 50 50 1 1 I
 X NRST 7 -700 1300 100 R 50 50 1 1 I
 X VSSA 8 100 -1500 100 U 50 50 1 1 W
 X VDDA 9 100 1500 100 D 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# Mechanical_MountingHole
+#
+DEF Mechanical_MountingHole H 0 40 Y Y 1 F N
+F0 "H" 0 200 50 H V C CNN
+F1 "Mechanical_MountingHole" 0 125 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ MountingHole*
+$ENDFPLIST
+DRAW
+C 0 0 50 0 1 50 N
 ENDDRAW
 ENDDEF
 #

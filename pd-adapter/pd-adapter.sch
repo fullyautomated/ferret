@@ -1728,4 +1728,70 @@ Wire Wire Line
 	5500 3500 5950 3500
 Wire Wire Line
 	5500 3400 5950 3400
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5F2310D7
+P 5400 7100
+F 0 "H?" H 5500 7100 50  0000 L CNN
+F 1 "MountingHole" H 5500 7055 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO14580_Pad" H 5400 7100 50  0001 C CNN
+F 3 "~" H 5400 7100 50  0001 C CNN
+	1    5400 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5F231718
+P 5700 7100
+F 0 "H?" H 5800 7100 50  0000 L CNN
+F 1 "MountingHole" H 5800 7055 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO14580_Pad" H 5700 7100 50  0001 C CNN
+F 3 "~" H 5700 7100 50  0001 C CNN
+	1    5700 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5F23192A
+P 5700 7300
+F 0 "H?" H 5800 7300 50  0000 L CNN
+F 1 "MountingHole" H 5800 7255 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO14580_Pad" H 5700 7300 50  0001 C CNN
+F 3 "~" H 5700 7300 50  0001 C CNN
+	1    5700 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5F231B9E
+P 5400 7300
+F 0 "H?" H 5500 7300 50  0000 L CNN
+F 1 "MountingHole" H 5500 7255 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO14580_Pad" H 5400 7300 50  0001 C CNN
+F 3 "~" H 5400 7300 50  0001 C CNN
+	1    5400 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Graphic:SYM_Arrow45_Normal #SYM?
+U 1 1 5F2328C0
+P 6100 7100
+F 0 "#SYM?" H 6250 7150 50  0001 C CNN
+F 1 "SYM_Arrow45_Normal" H 6100 7000 50  0001 C CNN
+F 2 "Automated:transistor_10x10mm" H 6100 7100 50  0001 C CNN
+F 3 "~" H 6100 7100 50  0001 C CNN
+	1    6100 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Graphic:SYM_Arrow45_Normal #SYM?
+U 1 1 5F232EDA
+P 6100 7300
+F 0 "#SYM?" H 6250 7350 50  0001 C CNN
+F 1 "SYM_Arrow45_Normal" H 6100 7200 50  0001 C CNN
+F 2 "Automated:fully_automated_logo_silkscreen" H 6100 7300 50  0001 C CNN
+F 3 "~" H 6100 7300 50  0001 C CNN
+	1    6100 7300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
