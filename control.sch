@@ -320,14 +320,9 @@ Wire Wire Line
 	3750 3600 4100 3600
 Text Label 2150 1200 0    50   ~ 0
 ~RST
-Text Label 4100 3500 2    50   ~ 0
-D+
-Text Label 4100 3400 2    50   ~ 0
-D-
 NoConn ~ 2450 1600
 NoConn ~ 2450 1700
 NoConn ~ 2450 2000
-NoConn ~ 2450 2100
 Text Label 2100 3100 0    50   ~ 0
 SCL
 Text Label 2100 3200 0    50   ~ 0
@@ -383,29 +378,29 @@ BOOT0
 Wire Wire Line
 	2150 1400 2450 1400
 Wire Wire Line
-	4100 3400 3750 3400
+	3850 3400 3750 3400
 Wire Wire Line
-	3750 3500 4100 3500
-Text HLabel 2400 2600 0    50   Input ~ 0
+	3750 3500 3850 3500
+Text HLabel 2350 2600 0    50   Input ~ 0
 ~INT_PMC
-Text HLabel 2400 2500 0    50   Input ~ 0
+Text HLabel 2350 2500 0    50   Input ~ 0
 ~INT_CHG
-Text HLabel 2400 2400 0    50   Input ~ 0
+Text HLabel 2350 2400 0    50   Input ~ 0
 EN_SNK
-Text HLabel 2400 2300 0    50   Output ~ 0
+Text HLabel 2350 2300 0    50   Output ~ 0
 ~CE
 Text HLabel 4450 1200 0    50   Output ~ 0
 SCL
 Text HLabel 4450 1300 0    50   BiDi ~ 0
 SDA
 Wire Wire Line
-	2450 2600 2400 2600
+	2450 2600 2350 2600
 Wire Wire Line
-	2400 2500 2450 2500
+	2350 2500 2450 2500
 Wire Wire Line
-	2450 2400 2400 2400
+	2450 2400 2350 2400
 Wire Wire Line
-	2400 2300 2450 2300
+	2350 2300 2450 2300
 Text Label 2100 2900 0    50   ~ 0
 UART_TX
 Text Label 2100 3000 0    50   ~ 0
@@ -1153,7 +1148,6 @@ Wire Wire Line
 Connection ~ 8250 4900
 Wire Wire Line
 	8250 4900 8250 5000
-NoConn ~ 3750 3800
 Text Notes 1650 850  0    50   ~ 0
 TODO: BOOT0 selector switch
 Text GLabel 9800 5350 1    50   BiDi ~ 0
@@ -1437,22 +1431,14 @@ Wire Wire Line
 	6250 5750 5700 5750
 Wire Wire Line
 	5700 5850 6250 5850
-Text Label 4400 3200 2    50   ~ 0
+Text Label 4350 3200 2    50   ~ 0
 USB_UART_TX
 Wire Wire Line
-	4400 3200 3750 3200
-Text Label 4400 3300 2    50   ~ 0
+	4350 3200 3750 3200
+Text Label 4350 3300 2    50   ~ 0
 USB_UART_RX
 Wire Wire Line
-	4400 3300 3750 3300
-Text Label 2100 3300 0    50   ~ 0
-SBU2
-Text Label 2100 3400 0    50   ~ 0
-SBU1
-Wire Wire Line
-	2450 3400 2100 3400
-Wire Wire Line
-	2100 3300 2450 3300
+	4350 3300 3750 3300
 Wire Wire Line
 	8650 2600 8650 2850
 Wire Wire Line
@@ -1477,14 +1463,6 @@ Text Label 8650 2850 1    50   ~ 0
 Pink2
 Text Label 8950 2850 1    50   ~ 0
 Blue2
-Text Label 4050 2300 2    50   ~ 0
-SBU1
-Text Label 4050 2400 2    50   ~ 0
-SBU2
-Wire Wire Line
-	3750 2400 4050 2400
-Wire Wire Line
-	4050 2300 3750 2300
 Text Label 2100 3600 0    50   ~ 0
 EXT_SCL
 Text Label 2100 3700 0    50   ~ 0
@@ -1495,4 +1473,29 @@ Wire Wire Line
 	2450 3700 2100 3700
 NoConn ~ 3750 2800
 NoConn ~ 3750 3100
+Text HLabel 3850 3400 2    50   BiDi ~ 0
+D-
+Text HLabel 3850 3500 2    50   BiDi ~ 0
+D+
+Text HLabel 3850 2300 2    50   BiDi ~ 0
+SBU1
+Text HLabel 2350 3400 0    50   BiDi ~ 0
+SBU1
+Wire Wire Line
+	2450 3300 2350 3300
+Wire Wire Line
+	3850 2300 3750 2300
+Text HLabel 3850 2400 2    50   BiDi ~ 0
+SBU2
+Wire Wire Line
+	3850 2400 3750 2400
+Text HLabel 2350 3300 0    50   BiDi ~ 0
+SBU2
+Wire Wire Line
+	2450 3400 2350 3400
+NoConn ~ 2450 2100
+Text HLabel 3850 3800 2    50   Output ~ 0
+USB_SEL
+Wire Wire Line
+	3850 3800 3750 3800
 $EndSCHEMATC

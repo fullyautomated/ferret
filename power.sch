@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 4
+Sheet 3 4
 Title ""
 Date ""
 Rev ""
@@ -1097,6 +1097,9 @@ Text HLabel 7750 3100 2    50   Input ~ 0
 SCL
 Text HLabel 7750 3200 2    50   BiDi ~ 0
 SDA
-Text HLabel 8250 3300 2    50   Input ~ 0
+Text HLabel 8300 3300 2    50   Input ~ 0
 ~CE
+Wire Wire Line
+	8300 3300 8250 3300
+Connection ~ 8250 3300
 $EndSCHEMATC
