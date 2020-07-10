@@ -1042,4 +1042,6 @@ F 4 "SiSS10ADN" V 5100 2150 50  0001 C CNN "MPN"
 	1    5100 2150
 	0    1    1    0   
 $EndComp
+Text Label 4500 2250 0    50   ~ 0
+VBS
 $EndSCHEMATC

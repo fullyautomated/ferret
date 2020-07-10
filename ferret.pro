@@ -1,4 +1,4 @@
-update=Sa 04 Jul 2020 19:13:40
+update=Sa 04 Jul 2020 20:53:58
 version=1
 last_client=kicad
 [general]
@@ -264,7 +264,7 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
 Name=Thicc
-Clearance=0.2
+Clearance=0.16
 TrackWidth=2
 ViaDiameter=2.4
 ViaDrill=1
