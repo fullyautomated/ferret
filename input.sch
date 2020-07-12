@@ -591,10 +591,6 @@ Text Label 9450 2350 2    50   ~ 0
 SDA
 Text Label 9450 2450 2    50   ~ 0
 SCL
-Wire Wire Line
-	9450 2450 9250 2450
-Wire Wire Line
-	9250 2350 9450 2350
 Text Label 9300 2550 0    50   ~ 0
 ~INT_PMC
 Text Label 9650 2950 2    50   ~ 0
@@ -1044,4 +1040,20 @@ F 4 "SiSS10ADN" V 5100 2150 50  0001 C CNN "MPN"
 $EndComp
 Text Label 4500 2250 0    50   ~ 0
 VBS
+Text HLabel 9700 2150 2    50   Input ~ 0
+SCL
+Text HLabel 9700 2050 2    50   BiDi ~ 0
+SDA
+Wire Wire Line
+	9600 2450 9600 2150
+Wire Wire Line
+	9600 2150 9700 2150
+Wire Wire Line
+	9250 2450 9600 2450
+Wire Wire Line
+	9500 2350 9500 2050
+Wire Wire Line
+	9500 2050 9700 2050
+Wire Wire Line
+	9250 2350 9500 2350
 $EndSCHEMATC
