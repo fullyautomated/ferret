@@ -548,9 +548,11 @@ L Device:R_Small R303
 U 1 1 5F1A3798
 P 4300 1750
 F 0 "R303" H 4359 1796 50  0000 L CNN
-F 1 "5.23k" H 4359 1705 50  0000 L CNN
+F 1 "5.1k" H 4359 1705 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 4300 1750 50  0001 C CNN
 F 3 "~" H 4300 1750 50  0001 C CNN
+F 4 "0603" H 4300 1750 50  0001 C CNN "JLC"
+F 5 "C23186" H 4300 1750 50  0001 C CNN "LCSC"
 	1    4300 1750
 	1    0    0    -1  
 $EndComp
@@ -559,9 +561,11 @@ L Device:R_Small R304
 U 1 1 5F1A379E
 P 4300 2050
 F 0 "R304" H 4242 2096 50  0000 R CNN
-F 1 "30.1k" H 4242 2005 50  0000 R CNN
+F 1 "30k" H 4242 2005 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 4300 2050 50  0001 C CNN
 F 3 "~" H 4300 2050 50  0001 C CNN
+F 4 " C22984" H 4300 2050 50  0001 C CNN "LCSC"
+F 5 "0603" H 4300 2050 50  0001 C CNN "JLC"
 	1    4300 2050
 	1    0    0    -1  
 $EndComp
@@ -1415,4 +1419,16 @@ Wire Wire Line
 	8200 1950 9000 1950
 Wire Wire Line
 	9350 4000 9750 4000
+Text Notes 4650 1650 0    50   ~ 0
+5.23k substituted for LCSC basic part 5.1k
+Wire Notes Line
+	4550 1800 4700 1800
+Wire Notes Line
+	4700 1800 4700 1650
+Text Notes 4100 2800 0    50   ~ 0
+could be a thermistor! connect a 10kOhm\nNTC here if your battery got no other\nthermal protection!
+Wire Notes Line
+	4500 2150 4600 2150
+Wire Notes Line
+	4600 2150 4600 2550
 $EndSCHEMATC

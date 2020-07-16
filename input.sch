@@ -1065,4 +1065,10 @@ Wire Wire Line
 	9500 2050 9700 2050
 Wire Wire Line
 	9250 2350 9500 2350
+Text Notes 2650 1300 0    50   ~ 0
+2 zeners in series only because\nthis way we can use LCSC basic parts\nand save on the ext. part setup fee
+Wire Notes Line
+	4350 1850 3550 1850
+Wire Notes Line
+	3550 1850 3550 1350
 $EndSCHEMATC
