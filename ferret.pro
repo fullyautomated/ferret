@@ -1,6 +1,6 @@
-update=Fri Jul 10 17:36:22 2020
+update=Thu 16 Jul 2020 21:45:05 CEST
 version=1
-last_client=pcbnew
+last_client=kicad
 [general]
 version=1
 RootSch=
@@ -24,7 +24,7 @@ LabSize=50
 ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
-PageLayoutDescrFile=
+PageLayoutDescrFile=/home/elen/automated/fully-auto-mated/battery/01_logic_board/kicad_layout.kicad_wks
 LastNetListRead=
 CopperLayerCount=4
 BoardThickness=1.6
@@ -37,7 +37,7 @@ MinViaDiameter=0.45
 MinViaDrill=0.2
 MinMicroViaDiameter=0.2
 MinMicroViaDrill=0.09999999999999999
-MinHoleToHole=0.25
+MinHoleToHole=0.127
 TrackWidth1=0.2
 TrackWidth2=0.1524
 TrackWidth3=0.16

@@ -1275,10 +1275,6 @@ Text Label 2900 4100 0    50   ~ 0
 EXT_SCL
 Text Label 2900 4200 0    50   ~ 0
 EXT_SDA
-Wire Wire Line
-	2900 4100 3250 4100
-Wire Wire Line
-	3250 4200 2900 4200
 NoConn ~ 4550 3300
 NoConn ~ 4550 3600
 Text HLabel 4650 3900 2    50   BiDi ~ 0
@@ -1686,4 +1682,10 @@ Text Label 2200 4050 2    50   ~ 0
 MCUXT_P
 Text Label 2200 3850 2    50   ~ 0
 MCUXT_N
+Wire Wire Line
+	2850 4100 3250 4100
+Wire Wire Line
+	2850 4200 3250 4200
+NoConn ~ 2850 4100
+NoConn ~ 2850 4200
 $EndSCHEMATC
