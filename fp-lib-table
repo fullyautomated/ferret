@@ -1,3 +1,3 @@
 (fp_lib_table
-  (lib (name ferret)(type KiCad)(uri /home/elen/automated/ferret)(options "")(descr ""))
+  (lib (name ferret)(type KiCad)(uri ${KIPRJMOD})(options "")(descr ""))
 )
