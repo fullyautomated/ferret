@@ -389,7 +389,7 @@ U 1 1 5EFF14C3
 P 1850 6350
 F 0 "J401" H 1420 6289 50  0000 R CNN
 F 1 "CTRL" H 1420 6198 50  0000 R CNN
-F 2 "Connector_USB:USB_C_Receptacle_XKB_U262-16XN-4BVC11" H 2000 6350 50  0001 C CNN
+F 2 "Automated:USB_C_Receptacle_XKB_U262-16XN-4BVC11" H 2000 6350 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 2000 6350 50  0001 C CNN
 	1    1850 6350
 	1    0    0    -1  
