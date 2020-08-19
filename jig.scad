@@ -10,9 +10,9 @@ pcb = [50,50,pcbThickness];
 
 pcbShroud = 1.4;
 
-base = [100, 100, 0.4];
+base = [110, 130, 0.4];
 
-stencilOffset = [0,10,0];
+stencilOffset = [0,20,0];
 cornerRadius = 5;
 
 holes = [[6,6], [46, 34]];
@@ -65,8 +65,9 @@ module main() {
     difference() {
         union() {
             // main part +
-            linear_extrude(totalZ)
-                roundedSquare([base.x, base.y], cornerRadius, center=true);
+            translate(stencilOffset)
+                linear_extrude(totalZ)
+                    roundedSquare([base.x, base.y], cornerRadius, center=true);
         }
         union() {
             // pcb -
@@ -83,9 +84,9 @@ module main() {
             
             // additional clearance -
             translate([pcb.x/-2, pcb.y/-2,base.z])
-                translate([23, 1.2])
+                translate([27, 1.2])
                     linear_extrude(totalZ)
-                        square([7,2], center=true);
+                        square([9,2], center=true);
             
             // eject holes -
             eh = [[25,5], [25,45], [5,25], [45,25], [22, 25], [40, 12], [7, 40], [42, 42], [32,34], [12,14]];
